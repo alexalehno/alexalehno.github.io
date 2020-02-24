@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MgOpen Modata';
+    src: url('MgOpenModata.eot');
+    src: url('MgOpenModata.eot?#iefix') format('embedded-opentype'),
+        url('MgOpenModata.woff2') format('woff2'),
+        url('MgOpenModata.woff') format('woff'),
+        url('MgOpenModata.ttf') format('truetype'),
+        url('MgOpenModata.svg#MgOpenModata') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
