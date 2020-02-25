@@ -125,11 +125,11 @@ function html() {
       })
     )
     .pipe(minifyHtml())
-    .pipe(
-      rename({
-        suffix: ".min"
-      })
-    )
+    // .pipe(
+    //   rename({
+    //     suffix: ".min"
+    //   })
+    // )
     .pipe(gulp.dest("./dist"))
     .pipe(browserSync.stream());
 }
