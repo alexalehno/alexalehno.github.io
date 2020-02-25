@@ -456,7 +456,6 @@ a {
 	font-size: 48px;
 	font-weight: 400;
 	position: relative;
-	margin-top: 65px;
 	letter-spacing: 5px;
 	color: #3d3d3d;
 }
@@ -483,6 +482,10 @@ a {
 	padding: 55px 0;
 	text-align: center;
 	background-color: #171f23;
+}
+
+.wr-dark-section .container {
+	margin-top: 65px;
 }
 
 .wr-dark-section h2 {
@@ -743,7 +746,7 @@ nav.active {
 	padding-bottom: 120px;
 }
 
-.about-block-wrapper {
+.wr-about .container {
 	display: -webkit-box;
 	display: flex;
 	margin-top: 42px;
@@ -756,8 +759,7 @@ nav.active {
 	font-family: 'Roboto-Thin';
 	font-size: 14px;
 	box-sizing: border-box;
-	width: 320px;
-	height: 196px;
+	max-width: 32%;
 	padding: 30px 30px 23px;
 	color: #707070;
 	background-color: #ebebeb;
@@ -768,10 +770,6 @@ nav.active {
 	font-size: 17px;
 	margin-bottom: 10px;
 	letter-spacing: 1px;
-}
-
-.wr-about .about-block img {
-	margin-right: 23px;
 }
 
 .wr-video {
@@ -1018,11 +1016,14 @@ nav.active {
 	padding-bottom: 72px;
 }
 
+.wr-team .container {
+	margin-top: 72px;
+}
+
 .person {
 	display: -webkit-box;
 	display: flex;
 	box-sizing: border-box;
-	margin-top: 72px;
 	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
@@ -1032,8 +1033,8 @@ nav.active {
 	display: -webkit-box;
 	display: flex;
 	box-sizing: border-box;
-	width: 320px;
-	height: 436px;
+	max-width: 320px;
+	margin-bottom: 0;
 	background-color: #ebebeb;
 	-webkit-box-align: center;
 	align-items: center;
@@ -1050,6 +1051,7 @@ nav.active {
 	display: inline-block;
 	width: 134px;
 	height: 134px;
+	border-radius: 50%;
 }
 
 .person .name {
@@ -1189,18 +1191,12 @@ nav.active {
 .features {
 	display: -webkit-box;
 	display: flex;
-	margin-top: 55px;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
 .features .features-item {
-	width: 150px;
-	margin-left: 40px;
-}
-
-.features .features-item:first-child {
-	margin-left: 0;
+	max-width: 20%;
 }
 
 .features .feature-name {
@@ -1221,10 +1217,13 @@ nav.active {
 	padding-bottom: 115px;
 }
 
+.wr-blogs .container {
+	margin-top: 62px;
+}
+
 .blogs {
 	display: -webkit-box;
 	display: flex;
-	margin-top: 62px;
 	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
@@ -1354,7 +1353,6 @@ nav.active {
 .plans {
 	display: -webkit-box;
 	display: flex;
-	margin-top: 65px;
 	margin-right: 20px;
 	flex-wrap: wrap;
 	-webkit-box-pack: center;
@@ -1449,11 +1447,14 @@ nav.active {
 	padding-bottom: 83px;
 }
 
+.wr-contact .container {
+	margin-top: 80px;
+}
+
 form {
 	font-family: 'Roboto';
 	font-size: 14px;
 	font-weight: 700;
-	margin-top: 80px;
 	text-align: center;
 	letter-spacing: 1.4px;
 	text-transform: uppercase;

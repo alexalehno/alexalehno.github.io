@@ -18,7 +18,6 @@ $transition: 0.3s;
   width: 37%;
   h2 {
     position: relative;
-    margin-top: 65px;
     font-family: "BigNoodleTitling";
     font-size: 48px;
     font-weight: 400;
@@ -44,6 +43,9 @@ $transition: 0.3s;
 }
 
 .wr-dark-section {
+  .container {
+    margin-top: 65px;
+  }
   padding: 55px 0;
   text-align: center;
   background-color: #171f23;
@@ -278,17 +280,15 @@ nav {
 
 .wr-about {
   padding-bottom: 120px;
-}
-
-.about-block-wrapper {
-  @include flex-flex-wrap;
-  justify-content: space-between;
-  margin-top: 42px;
+  .container {
+    @include flex-flex-wrap;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
 }
 
 .wr-about .about-block {
-  width: 320px;
-  height: 196px;
+  max-width: 32%;
   padding: 30px 30px 23px;
   box-sizing: border-box;
   font-family: "Roboto-Thin";
@@ -301,9 +301,6 @@ nav {
     font-family: "Roboto-Bold";
     font-size: 17px;
     letter-spacing: 1px;
-  }
-  img {
-    margin-right: 23px;
   }
 }
 
@@ -461,7 +458,7 @@ nav {
     line-height: 40.42px;
     color: #ececec;
     outline: none;
-    img {  
+    img {
       margin: 0;
       margin-right: 3px;
     }
@@ -475,13 +472,12 @@ nav {
 
   .draggable {
     width: 74%;
-    
   }
   .slick-track {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .slick-prev::before,
   .slick-next::before {
     content: "";
@@ -510,17 +506,18 @@ nav {
   }
 }
 
-
 // //////////  TEAM  ///////////
 
 .wr-team {
   padding-bottom: 72px;
+  .container {
+    margin-top: 72px;
+  }
 }
 
 .person {
   @include flex-flex-wrap;
   justify-content: space-between;
-  margin-top: 72px;
   box-sizing: border-box;
 
   // ............. team-slider..........
@@ -528,8 +525,8 @@ nav {
     @include flex-align-items-center;
     justify-content: center;
     box-sizing: border-box;
-    width: 320px;
-    height: 436px;
+    max-width: 320px;
+    margin-bottom: 0;
     background-color: #ebebeb;
   }
   .slide-member {
@@ -540,6 +537,7 @@ nav {
     display: inline-block;
     width: 134px;
     height: 134px;
+    border-radius: 50%;
   }
   .name {
     margin-top: 30px;
@@ -660,14 +658,9 @@ nav {
 .features {
   @include flex-flex-wrap;
   justify-content: space-around;
-  margin-top: 55px;
 
   .features-item {
-    width: 150px;
-    margin-left: 40px;
-  }
-  .features-item:first-child {
-    margin-left: 0;
+    max-width: 20%;
   }
   .feature-name {
     margin-top: 20px;
@@ -687,12 +680,14 @@ nav {
 
 .wr-blogs {
   padding-bottom: 115px;
+  .container {
+    margin-top: 62px;
+  }
 }
 
 .blogs {
   @include flex-flex-wrap;
   justify-content: space-between;
-  margin-top: 62px;
 }
 
 .blog-item {
@@ -805,7 +800,6 @@ nav {
 .plans {
   @include flex-flex-wrap;
   justify-content: center;
-  margin-top: 65px;
   margin-right: 20px;
   .plan-item {
     width: 232px;
@@ -881,10 +875,12 @@ nav {
 
 .wr-contact {
   padding-bottom: 83px;
+  .container {
+    margin-top: 80px;
+  }
 }
 
 form {
-  margin-top: 80px;
   text-align: center;
   color: #696969;
   font-family: "Roboto";
