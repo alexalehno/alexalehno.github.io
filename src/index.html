@@ -38,6 +38,7 @@
           <li><a href="#" data-scroll="#works">OUR WORKS</a></li>
           <li><a href="#" data-scroll="#who-we-are">WHO WE ARE</a></li>
           <li><a href="#" data-scroll="#blog">BLOG POSTS</a></li>
+          <li><a href="#" data-scroll="#plan"> CHOSE PLAN</a></li>
           <li><a href="#" data-scroll="#cotact">GET IN TOUCH</a></li>
           <li><a href="#" data-scroll="#location">LOCATION</a></li>
         </ul>
@@ -107,7 +108,7 @@
 
   <!-- ////////////   video      ////////////// -->
 
-  <section class="wr-video" id="video">
+  <section class="wr-video-section" id="video">
     <div class="video-description">
       <div class="description-size">
         <h3>WATCH BEHIND THE SCENE</h3>
@@ -116,17 +117,14 @@
           laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure
         </p>
-        <button id="play-now">PLAY NOW</button>
+        <button id="play-now-btn">PLAY NOW</button>
       </div>
     </div>
 
 
 
-    <div class="video-btn-section" id="hide-btn">
-      <div class="play-video" id="play-pause">
-        <video class="video" src="./media/video/Street.mp4" poster="./media/img/video-poster.jpg">
-        </video>
-      </div>
+    <div class="wr-video" id="play-video">
+      <video src="./media/video/Street.mp4" poster="./media/img/video-poster.jpg"></video>
     </div>
 
 
@@ -228,8 +226,8 @@
 
           <div class="slide-member">
             <img class="image-person" src="./media/img/avatar.png" alt="image-person">
-            <div class="name">JANE SMITH</div>
-            <div class="position">DESIGNER</div>
+            <a class="name" href="#">JANE SMITH</a>
+            <a class="position" href="#">DESIGNER</a>
             <div class="social">
               <a href="#"><img src="./media/icon/social-icon.png" alt="social-icon"></a>
               <a href="#"><img src="./media/icon/twitter.png" alt="twitter"></a>
@@ -238,28 +236,24 @@
           </div>
 
           <div class="slide-member">
-
             <img class="image-person" src="./media/img/avatar.png" alt="image-person">
-
-            <div class="name">JANE SMITH</div>
-            <div class="position">DESIGNER</div>
+            <a class="name" href="#">JANE SMITH</a>
+            <a class="position" href="#">DESIGNER</a>
             <div class="social">
-              <img src="./media/icon/social-icon.png" alt="social-icon">
-              <img src="./media/icon/twitter.png" alt="twitter">
-              <img src="./media/icon/facebook.png" alt="facebook">
+              <a href="#"><img src="./media/icon/social-icon.png" alt="social-icon"></a>
+              <a href="#"><img src="./media/icon/twitter.png" alt="twitter"></a>
+              <a href="#"><img src="./media/icon/facebook.png" alt="facebook"></a>
             </div>
           </div>
 
           <div class="slide-member">
-
             <img class="image-person" src="./media/img/avatar.png" alt="image-person">
-
-            <div class="name">JANE SMITH</div>
-            <div class="position">DESIGNER</div>
+            <a class="name" href="#">JANE SMITH</a>
+            <a class="position" href="#">DESIGNER</a>
             <div class="social">
-              <img src="./media/icon/social-icon.png" alt="social-icon">
-              <img src="./media/icon/twitter.png" alt="twitter">
-              <img src="./media/icon/facebook.png" alt="facebook">
+              <a href="#"><img src="./media/icon/social-icon.png" alt="social-icon"></a>
+              <a href="#"><img src="./media/icon/twitter.png" alt="twitter"></a>
+              <a href="#"><img src="./media/icon/facebook.png" alt="facebook"></a>
             </div>
           </div>
 
@@ -397,25 +391,25 @@
 
         <div class="features-item">
           <img src="./media/icon/Shortcodes.png" alt="Shortcodes">
-          <div class="feature-name">Shortcodes</div>
+          <a class="feature-name" href="#">Shortcodes</a>
           <div class="features-number">46</div>
         </div>
 
         <div class="features-item">
           <img src="./media/icon/Integrated-Plugins.png" alt="Integrated-Plugins">
-          <div class="feature-name">Integrated Plugins</div>
+          <a class="feature-name" href="#">Integrated Plugins</a>
           <div class="features-number">128</div>
         </div>
 
         <div class="features-item">
           <img src="./media/icon/Creative-Products.png" alt="Creative-Products">
-          <div class="feature-name">Creative Products</div>
+          <a class="feature-name" href="#">Creative Products</a>
           <div class="features-number">450</div>
         </div>
 
         <div class="features-item">
           <img src="./media/icon/Clients-Worldwide.png" alt="Clients-Worldwide">
-          <div class="feature-name">Clients Worldwide</div>
+          <a class="feature-name" href="#">Clients Worldwide</a>
           <div class="features-number">100+</div>
         </div>
 
@@ -451,16 +445,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
             <div class="date-like">
+
               <div class="date">
                 <img src="./media/icon/blog-date.png" alt="">
                 <span>25 Jan 2015</span>
               </div>
+
               <div class="like">
-                <img src="./media/icon/blog-like.png" alt="">
-                <span>25</span>
-                <img src="./media/icon/blog-comment.png" alt="">
-                <span>11</span>
+                <a href="#"><img src="./media/icon/blog-like.png" alt=""><span>25</span></a>
+                <a href="#"> <img src="./media/icon/blog-comment.png" alt=""><span>11</span></a>
               </div>
+
             </div>
           </div>
 
@@ -481,12 +476,12 @@
                 <img src="./media/icon/blog-date.png" alt="">
                 <span>25 Jan 2015</span>
               </div>
+
               <div class="like">
-                <img src="./media/icon/blog-like.png" alt="">
-                <span>25</span>
-                <img src="./media/icon/blog-comment.png" alt="">
-                <span>11</span>
+                <a href="#"><img src="./media/icon/blog-like.png" alt=""><span>25</span></a>
+                <a href="#"> <img src="./media/icon/blog-comment.png" alt=""><span>11</span></a>
               </div>
+
             </div>
           </div>
         </div>
@@ -507,10 +502,8 @@
                 <span>25 Jan 2015</span>
               </div>
               <div class="like">
-                <img src="./media/icon/blog-like.png" alt="">
-                <span>25</span>
-                <img src="./media/icon/blog-comment.png" alt="">
-                <span>11</span>
+                <a href="#"><img src="./media/icon/blog-like.png" alt=""><span>25</span></a>
+                <a href="#"> <img src="./media/icon/blog-comment.png" alt=""><span>11</span></a>
               </div>
             </div>
           </div>
@@ -522,7 +515,7 @@
 
   <!-- ////////////////     pricing    ////////////////////// -->
 
-  <section class="wr-dark-section section-price">
+  <section class="wr-dark-section section-price" id="plan">
 
     <h2>CHOSE PLAN</h2>
 
@@ -531,10 +524,14 @@
       <div class="plans">
 
         <div class="plan-item">
+
           <div class="plan-item-price">
-            <div class="plan-name">BASIC</div>
-            <div class="price">Free</div>
+            <a class="plan-name" href="#">
+              BASIC
+              <div class="price"><sub>&#36</sub>Free</div>
+            </a>
           </div>
+
           <div class="plan-description">
             <ul>
               <li><span>20</span> Pages</li>
@@ -547,10 +544,14 @@
         </div>
 
         <div class="plan-item">
+
           <div class="plan-item-price">
-            <div class="plan-name">STANDART</div>
-            <div class="price"><sub>&#36</sub>24.00</div>
+            <a class="plan-name" href="#">
+              STANDART
+              <div class="price"><sub>&#36</sub>24.00</div>
+            </a>
           </div>
+
           <div class="plan-description">
             <ul>
               <li><span>25</span> Pages</li>
@@ -564,8 +565,10 @@
 
         <div class="plan-item">
           <div class="plan-item-price">
-            <div class="plan-name">PREMIUM</div>
-            <div class="price"><sub>&#36</sub>40.00</div>
+            <a class="plan-name" href="#">
+              PREMIUM
+              <div class="price"><sub>&#36</sub>40.00</div>
+            </a>
           </div>
           <div class="plan-description">
             <ul>
@@ -580,9 +583,12 @@
 
         <div class="plan-item">
           <div class="plan-item-price">
-            <div class="plan-name">PROFECCIONAL</div>
-            <div class="price"><sub>&#36</sub>75.00</div>
+            <a class="plan-name" href="#">
+              PROFECCIONAL
+              <div class="price"><sub>&#36</sub>75.00</div>
+            </a>
           </div>
+
           <div class="plan-description">
             <ul>
               <li><span>40</span> Pages</li>
@@ -634,25 +640,25 @@
     </div>
   </section>
 
+  <!-- //////////////  location ///////////////////// -->
 
+  <div class="location" id="location">
+
+    <div class="accordion" data-collapse="#map">
+      <span> LOCATE ON MAP </span>
+    </div>
+
+    <div class="map" id="map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa7198684924e58c97b7033617bff0552d05c8c6391f6f8cce49414c92cb185c8&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </div>
+
+  </div>
+
+  <!-- ///////////   footer /////////////////-->
 
   <footer>
-
-    <div class="location" id="location">
-
-      <div class="wrap-accordion">
-        <div class="accordion" data-collapse="#map">
-          <span> LOCATE ON MAP </span>
-        </div>
-      </div>
-
-      <div class="map" id="map">
-        <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa7198684924e58c97b7033617bff0552d05c8c6391f6f8cce49414c92cb185c8&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
-          </script>
-      </div>
-
-    </div>
 
     <div class="lg-footer logo">
       <a href="#">
@@ -663,13 +669,11 @@
 
     <p>MADE WITH LOVE BY CREATIVEPRODUCT</p>
 
-    <div class="social-footer">
-      <ul>
-        <li><a href="#"><img src="./media/icon/social-icon-footer.png" alt="social-icon"></a></li>
-        <li><a href="#"><img src="./media/icon/twitter-footer.png" alt="twitter"></a></li>
-        <li><a href="#"><img src="./media/icon/facebook-footer.png" alt="facebook"></a></li>
-      </ul>
-    </div>
+    <ul class="social-footer">
+      <li><a href="#"><img src="./media/icon/social-icon-footer.png" alt="social-icon"></a></li>
+      <li><a href="#"><img src="./media/icon/twitter-footer.png" alt="twitter"></a></li>
+      <li><a href="#"><img src="./media/icon/facebook-footer.png" alt="facebook"></a></li>
+    </ul>
 
   </footer>
 

@@ -113,9 +113,9 @@ header {
 nav {
   position: absolute;
   right: -200px;
-  top: -400px;
+  top: -450px;
   width: 210px;
-  height: 395px;
+  padding-bottom: 20px;
   background-color: rgba(1, 1, 1, 0.6);
   transition: $transition;
   z-index: 15;
@@ -213,7 +213,8 @@ nav {
   .scroll-down {
     position: absolute;
     bottom: 7%;
-    left: calc(50% - 44px);
+    left: 50%;
+    transform: translateX(-50%);
     width: 85px;
     text-align: center;
     img {
@@ -306,7 +307,7 @@ nav {
 
 // ///////////////VIDEO////////////////////////
 
-.wr-video {
+.wr-video-section {
   @include flex-flex-wrap;
   width: 100%;
 
@@ -354,16 +355,12 @@ nav {
     }
   }
 
-  .video-btn-section {
+  .wr-video {
     position: relative;
     width: 50%;
     min-width: 400px;
+    background-color: black;
 
-    .play-video {
-      height: 100%;
-      width: 100%;
-      background-color: black;
-    }
     video {
       width: 100%;
       height: 100%;
@@ -374,12 +371,13 @@ nav {
     &::before {
       content: url("../media/icon/play-video.png");
       position: absolute;
-      top: calc(50% - 53px);
-      left: calc(50% - 46px);
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
       transition: $transition;
     }
     &:hover::before {
-      transform: scale(1.5);
+      opacity: 0.3;
     }
     &.active:before {
       opacity: 0;
@@ -540,6 +538,7 @@ nav {
     border-radius: 50%;
   }
   .name {
+    display: block;
     margin-top: 30px;
     font-family: "Roboto-Bold";
     font-size: 20px;
@@ -660,13 +659,15 @@ nav {
   justify-content: space-around;
 
   .features-item {
-    max-width: 20%;
+    width: 20%;
   }
   .feature-name {
+    display: block;
     margin-top: 20px;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 300;
+    color: #ffffff;
   }
   .features-number {
     margin-top: 20px;
@@ -691,8 +692,7 @@ nav {
 }
 
 .blog-item {
-  width: 320px;
-  height: 426px;
+  max-width: 32%;
   background-color: #ebebeb;
 
   &:hover {
@@ -708,7 +708,6 @@ nav {
 .blog-item-head {
   @include flex-align-items-center;
   justify-content: center;
-  width: 320px;
   height: 218px;
   transition: $transition;
 
@@ -762,7 +761,7 @@ nav {
 }
 
 .blog-title {
-  padding: 20px 34px 24px 28px;
+  padding: 0px 30px 30px;
   text-align: left;
   h4 {
     color: #505050;
@@ -770,6 +769,9 @@ nav {
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 1.8px;
+  }
+  a {
+    margin-left: 5px;
   }
   p {
     color: #797979;
@@ -779,6 +781,7 @@ nav {
     letter-spacing: 0.7px;
   }
   span {
+    margin-left: 4px;
     color: #8a8989;
     font-family: "Roboto - Condensed";
     font-size: 10px;
@@ -800,11 +803,8 @@ nav {
 .plans {
   @include flex-flex-wrap;
   justify-content: center;
-  margin-right: 20px;
   .plan-item {
-    width: 232px;
-    height: 449px;
-    margin-left: 1px;
+    width: 23%;
     border: 1px solid #171f23;
     font-family: "Roboto";
     background-color: #1f282c;
@@ -813,15 +813,22 @@ nav {
       transition: $transition;
     }
     .plan-item-price {
-      height: 128px;
       background-color: #0e1316;
+
       .plan-name {
-        padding-top: 42px;
-        font-weight: 900;
+        display: inline-block;
+        margin: 35px 0;
+        font-weight: 700;
         font-size: 14px;
-        letter-spacing: 2px;
+        letter-spacing: 1.2px;
+        color: #ffffff;
+        transition: $transition;
+        &:hover {
+          color: #707070;
+        }
       }
       .price {
+        font-weight: 500;
         font-family: "Roboto-Light";
         font-size: 36px;
         sub {
@@ -832,9 +839,7 @@ nav {
     }
     .plan-description {
       padding-top: 28px;
-      height: 321px;
       ul {
-        margin: 0;
         padding: 0;
         li {
           margin-top: 17px;
@@ -845,8 +850,7 @@ nav {
       .plan-item-button {
         display: inline-block;
         padding: 10px 20px;
-        margin-top: 75px;
-        border: none;
+        margin: 50px 0;
         border-radius: 3px;
         font-size: 13px;
         font-weight: 900;
@@ -961,50 +965,34 @@ form {
   }
 }
 
-// //////////// FOOTER ////////////////
+// //// location ////////////
 
-footer {
+.location {
   width: 100%;
-  min-height: 322px;
   text-align: center;
-  background-color: #171f23;
-  color: red;
-  p {
-    margin: 10px;
-    font-family: "Roboto Condensed";
-    font-size: 14px;
-    letter-spacing: 1.4px;
-  }
-}
-
-.location .wrap-accordion {
-  width: 100%;
   background-color: #0c1215;
 }
 
 .location .accordion {
   position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 83px;
+  display: inline-block;
   cursor: pointer;
   &::after {
     content: url("../media/icon/footer-location-arrow.png");
     position: absolute;
-    top: calc(50% - 6px);
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     width: 18px;
     height: 11px;
-    // background-image: url("../media/icon/footer-location-arrow.png");
-    // background-repeat: no-repeat;
   }
   &.active::after {
     transform: rotate(180deg);
   }
 
   span {
-    margin: 0 30px;
+    display: inline-block;
+    margin: 30px 30px;
     font-family: "Roboto Condensed-Bold";
     font-size: 24px;
     letter-spacing: 2px;
@@ -1015,6 +1003,19 @@ footer {
   display: none;
   &.active {
     display: block;
+  }
+}
+
+// //////////// FOOTER ////////////////
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #171f23;
+  p {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    letter-spacing: 1.4px;
   }
 }
 
@@ -1029,23 +1030,18 @@ footer {
 
   img {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
   }
 }
 
-.social-footer ul {
+.social-footer {
   display: flex;
   justify-content: center;
-  padding: 0;
-  padding-bottom: 25px;
-  margin: 10px;
+  padding: 0 0 50px;
+  margin: 0;
   li {
-    margin-right: 11px;
+    margin: 0 5px;
     list-style-type: none;
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
