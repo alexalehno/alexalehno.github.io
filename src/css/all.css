@@ -1688,7 +1688,7 @@ header {
 }
 
 .about-block {
-	margin: 10px;
+	margin: 10px 0;
 }
 
 .description-size {
@@ -1877,6 +1877,10 @@ header .logo span {
 	margin: 15px;
 }
 
+.wr-blogs {
+	padding-bottom: 45px;
+}
+
 .wr-blogs .container {
 	margin-top: 30px;
 }
@@ -1898,6 +1902,10 @@ header .logo span {
 .plan-item {
 	width: 45%;
 	margin: 5px;
+}
+
+.wr-contact {
+	padding-bottom: 50px;
 }
 
 .wr-contact .container {
@@ -1930,15 +1938,22 @@ form .wr-textarea {
 }
 
 .section-header {
-	width: 100%;
+	width: 95%;
 }
 
-.about-block-wrapper {
-	margin-top: 0;
+.video-description h3 {
+	font-size: 18px;
+	margin: 5px;
+}
+
+.video-description button {
+	margin: 10px;
+	padding: 8px 25px;
+	border-radius: 20px;
 }
 
 .projects img {
-	width: 70%;
+	width: 100%;
 }
 
 .projects img:nth-child(n + 4) {
@@ -1959,14 +1974,42 @@ form .wr-textarea {
 	background-image: url('../media/icon/arrow-right-clients.png');
 }
 
+.wr-team .container {
+	margin-top: 45px;
+}
+
 .person .team-slider,
 .person .skills-slider {
-	width: 75%;
+	width: 95%;
 	height: 350px;
+}
+
+.person .skills-slider h3 {
+	padding-bottom: 0;
+}
+
+.person .skill-item {
+	margin-top: 20px;
+}
+
+.person .line-filled {
+	width: 150px;
 }
 
 .person .slick-dots li button:before {
 	top: -65px;
+}
+
+.wr-dark-section h2 {
+	font-size: 27px;
+}
+
+.features-item {
+	width: 43%;
+}
+
+.plan-item {
+	width: 95%;
 }
 
 }

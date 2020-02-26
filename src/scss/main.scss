@@ -1117,7 +1117,7 @@ footer {
     margin-top: 30px;
   }
   .about-block {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   // video
@@ -1289,6 +1289,12 @@ footer {
   }
 
   // blogs
+
+  .wr-blogs {
+    padding-bottom: 45px;
+  }
+  
+
   .wr-blogs .container {
     margin-top: 30px;
   }
@@ -1313,6 +1319,10 @@ footer {
   }
 
   // form
+  .wr-contact {
+    padding-bottom: 50px;
+  }
+  
   .wr-contact .container {
     margin-top: 60px;
   }
@@ -1342,18 +1352,24 @@ footer {
   }
   // section-header
   .section-header {
-    width: 100%;
+    width: 95%;
   }
 
-  //wr-about
+  // video 
+  .video-description h3 {
+    margin: 5px;
+    font-size: 18px;
+  }
 
-  .about-block-wrapper {
-    margin-top: 0;
+  .video-description button {
+    padding: 8px 25px;
+    margin: 10px;
+    border-radius: 20px;
   }
 
   // wr-portfolio
   .projects img {
-    width: 70%;
+    width: 100%;
     &:nth-child(n + 4) {
       display: none;
     }
@@ -1377,13 +1393,45 @@ footer {
   }
 
   // team
+
+  .wr-team .container {
+    margin-top: 45px;
+  }
+
   .person .team-slider,
   .person .skills-slider {
-    width: 75%;
+    width: 95%;
     height: 350px;
+  }
+
+  .person .skills-slider h3 {
+    padding-bottom: 0;
+  }
+
+  .person .skill-item {
+    margin-top: 20px;
+  }
+
+  .person .line-filled {
+    width: 150px;
   }
 
   .person .slick-dots li button:before {
     top: -65px;
   }
+
+  // featurese 
+  .wr-dark-section h2 {
+    font-size: 27px;
+  }
+
+  .features-item {
+    width: 43%;
+  }
+
+  //pise 
+  .plan-item {
+    width: 95%;
+  }
+
 }
