@@ -452,7 +452,7 @@ a {
 
 .section-header {
 	display: inline-block;
-	width: 37%;
+	width: 550px;
 }
 
 .section-header h2 {
@@ -477,13 +477,11 @@ a {
 .section-header p {
 	font-family: 'Roboto-Thin';
 	font-size: 14px;
-	margin-top: -14px;
-	margin-left: 15px;
 	color: #696969;
 }
 
 .wr-dark-section {
-	padding: 55px 0;
+	padding: 25px 0 55px;
 	text-align: center;
 	background-color: #171f23;
 }
@@ -497,7 +495,6 @@ a {
 	font-size: 36px;
 	font-weight: 400;
 	position: relative;
-	margin: 0;
 	letter-spacing: 7px;
 	color: #f6f6f6;
 }
@@ -569,7 +566,7 @@ nav {
 	position: absolute;
 	z-index: 15;
 	top: -450px;
-	right: -200px;
+	right: 0;
 	width: 210px;
 	padding-bottom: 20px;
 	-webkit-transition: .5s;
@@ -768,7 +765,7 @@ nav.active {
 	font-size: 14px;
 	box-sizing: border-box;
 	width: 32%;
-	padding: 30px 30px 23px;
+	padding: 30px 30px 10px;
 	color: #707070;
 	background-color: #ebebeb;
 }
@@ -776,7 +773,6 @@ nav.active {
 .wr-about .about-block h3 {
 	font-family: 'Roboto-Bold';
 	font-size: 17px;
-	margin-bottom: 10px;
 	letter-spacing: 1px;
 }
 
@@ -804,7 +800,6 @@ nav.active {
 .video-description h3 {
 	font-family: 'Roboto-Bold';
 	font-size: 30px;
-	margin: 0;
 	color: #e7e7e7;
 }
 
@@ -818,7 +813,7 @@ nav.active {
 	font-family: 'Roboto-Bold';
 	font-size: 14px;
 	display: inline-block;
-	margin-top: 43px;
+	margin-top: 20px;
 	padding: 10px 30px;
 	-webkit-transition: .5s;
 	transition: .5s;
@@ -877,7 +872,7 @@ nav.active {
 .wr-portfolio ul {
 	display: -webkit-box;
 	display: flex;
-	margin-top: 68px;
+	margin-top: 55px;
 	padding: 0;
 	list-style: none;
 	flex-wrap: wrap;
@@ -920,7 +915,6 @@ nav.active {
 
 .projects img {
 	width: 20%;
-	height: auto;
 }
 
 .projects.active {
@@ -1018,7 +1012,7 @@ nav.active {
 }
 
 .wr-team .container {
-	margin-top: 72px;
+	margin-top: 60px;
 }
 
 .person {
@@ -1650,10 +1644,6 @@ footer p {
 	width: 50%;
 }
 
-.section-header p {
-	margin: 0;
-}
-
 }
 
 @media all and (max-width: 1000px) {
@@ -1673,21 +1663,10 @@ header {
 
 .section-header h2 {
 	font-size: 40px;
-	margin: 35px 0;
 }
 
 .wr-about {
 	padding-bottom: 30px;
-}
-
-.about-block-wrapper {
-	margin-top: 30px;
-	-webkit-box-pack: center;
-	justify-content: center;
-}
-
-.about-block {
-	margin: 10px 0;
 }
 
 .description-size {
@@ -1720,7 +1699,6 @@ header {
 }
 
 .person {
-	margin-top: 30px;
 	-webkit-box-pack: center;
 	justify-content: center;
 }
@@ -1739,7 +1717,6 @@ header {
 @media all and (max-width: 770px) {
 
 nav {
-	right: 0;
 	width: 100%;
 	background-color: rgba(1, 1, 1, .9);
 }
@@ -1774,6 +1751,7 @@ header .logo span {
 }
 
 .wr-about .container {
+	margin-top: 10px;
 	flex-wrap: wrap;
 	-webkit-box-pack: center;
 	justify-content: center;
@@ -1781,6 +1759,7 @@ header .logo span {
 
 .wr-about .about-block {
 	width: 95%;
+	margin: 10px 0;
 }
 
 .wr-video-section {
@@ -1811,7 +1790,7 @@ header .logo span {
 }
 
 .wr-portfolio ul {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .wr-portfolio ul li {
@@ -1834,6 +1813,10 @@ header .logo span {
 
 .projects img {
 	width: 33.33%;
+}
+
+.wr-team .container {
+	margin-top: 10px;
 }
 
 .person .team-slider,
@@ -1877,7 +1860,7 @@ header .logo span {
 }
 
 .wr-blogs .container {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .blogs {
@@ -1899,12 +1882,18 @@ header .logo span {
 	margin: 5px;
 }
 
+.plan-name,
+.plan-description,
+.plan-item-button {
+	margin: 25px 0;
+}
+
 .wr-contact {
 	padding-bottom: 40px;
 }
 
 .wr-contact .container {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 form .wr-input,
@@ -1916,6 +1905,10 @@ form .wr-textarea {
 form input,
 form textarea {
 	margin-top: 10px;
+}
+
+form textarea {
+	height: 50px;
 }
 
 form input {
@@ -1932,10 +1925,6 @@ form button {
 }
 
 @media all and (max-width: 575px) {
-
-.section-header h2 {
-	margin-bottom: 20px;
-}
 
 .wr-slide h1,
 .wr-slide h2 {
@@ -1983,10 +1972,6 @@ form button {
 	background-image: url('../media/icon/arrow-right-clients.png');
 }
 
-.wr-team .container {
-	margin-top: 45px;
-}
-
 .person .team-slider,
 .person .skills-slider {
 	width: 95%;
@@ -2010,7 +1995,7 @@ form button {
 }
 
 .wr-dark-section {
-	padding: 45px 0;
+	padding: 20px 0;
 }
 
 .wr-dark-section h2 {
