@@ -446,6 +446,10 @@ a {
 }
 
 
+.no-fricking-scroll-wrapper {
+	overflow: hidden;
+}
+
 .section-header {
 	display: inline-block;
 	width: 37%;
@@ -916,6 +920,7 @@ nav.active {
 
 .projects img {
 	width: 20%;
+	height: auto;
 }
 
 .projects.active {
@@ -1352,17 +1357,11 @@ nav.active {
 	padding-bottom: 95px;
 }
 
-.plans {
-	display: -webkit-box;
-	display: flex;
-	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	justify-content: center;
-}
-
 .plan-item {
 	font-family: 'Roboto';
+	display: inline-block;
 	width: 23%;
+	min-width: 175px;
 	-webkit-transition: .5s;
 	transition: .5s;
 	border: 1px solid #171f23;
@@ -1639,7 +1638,7 @@ footer p {
 }
 
 .wr-slide .subheading {
-	font-size: 26px;
+	font-size: 28px;
 }
 
 .heading-slider .slick-prev::before,
@@ -1763,7 +1762,7 @@ header .logo span {
 }
 
 .wr-slide .subheading {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .section-header {
@@ -1820,10 +1819,13 @@ header .logo span {
 }
 
 .wr-portfolio ul li a {
+	font-size: 12px;
 	display: inline-block;
-	width: 115px;
-	padding: 5px;
-	border: 1px solid;
+	width: 110px;
+	padding: 8px;
+	color: #fff;
+	border-radius: 20px;
+	background-color: #f6744b;
 }
 
 .projects {
@@ -1893,16 +1895,16 @@ header .logo span {
 }
 
 .plan-item {
-	width: 45%;
+	width: 35%;
 	margin: 5px;
 }
 
 .wr-contact {
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .wr-contact .container {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 form .wr-input,
@@ -1911,13 +1913,20 @@ form .wr-textarea {
 	margin: 15px 0 0;
 }
 
-form input {
-	height: 25px;
+form input,
+form textarea {
 	margin-top: 10px;
 }
 
+form input {
+	height: 20px;
+}
+
 form button {
-	margin-top: 35px;
+	width: 170px;
+	height: 40px;
+	margin-top: 20px;
+	border-radius: 20px;
 }
 
 }
@@ -1930,12 +1939,12 @@ form button {
 
 .wr-slide h1,
 .wr-slide h2 {
-	font-size: 35px;
+	font-size: 38px;
 	letter-spacing: 6.5px;
 }
 
 .wr-slide .subheading {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .section-header {
@@ -2013,7 +2022,8 @@ form button {
 }
 
 .plan-item {
-	width: 95%;
+	width: 50%;
+	min-width: 250px;
 }
 
 }

@@ -1,3 +1,7 @@
+.no-fricking-scroll-wrapper {
+  overflow: hidden;
+}
+
 // variables
 $transition: 0.5s;
 
@@ -71,7 +75,7 @@ $transition: 0.5s;
 
 // ///////////// header //////////////////////
 
-header {
+ header {
   position: absolute;
   top: 0;
   @include flex-align-items-center;
@@ -420,6 +424,7 @@ nav {
   margin-top: 30px;
   img {
     width: 20%;
+    height: auto;
   }
   &.active {
     background-color: #e84c3d;
@@ -798,13 +803,10 @@ nav {
   padding-bottom: 95px;
 }
 
-.plans {
-  @include flex-flex-wrap;
-  justify-content: center;
-}
-
 .plan-item {
+  display: inline-block;
   width: 23%;
+  min-width: 175px;
   border: 1px solid #171f23;
   font-family: "Roboto";
   background-color: #1f282c;
@@ -1070,7 +1072,7 @@ footer {
     font-size: 60px;
   }
   .wr-slide .subheading {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .heading-slider .slick-prev::before,
@@ -1186,7 +1188,7 @@ footer {
   }
 
   .wr-slide .subheading {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   // section-header
@@ -1242,9 +1244,12 @@ footer {
       margin: 5px;
       a {
         display: inline-block;
-        width: 115px;
-        padding: 5px;
-        border: 1px solid;
+        width: 110px;
+        padding: 8px;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: #f6744b;
+        color: #ffffff;
       }
     }
   }
@@ -1294,7 +1299,7 @@ footer {
   .wr-blogs {
     padding-bottom: 40px;
   }
-  
+
   .wr-blogs .container {
     margin-top: 30px;
   }
@@ -1314,17 +1319,17 @@ footer {
   }
 
   .plan-item {
-    width: 45%;
+    width: 35%;
     margin: 5px;
   }
 
   // form
   .wr-contact {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
-  
+
   .wr-contact .container {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   form .wr-input,
@@ -1333,13 +1338,20 @@ footer {
     margin: 15px 0 0;
   }
 
-  form input {
-    height: 25px;
+  form input,
+  form textarea {
     margin-top: 10px;
   }
 
+  form input {
+    height: 20px;
+  }
+
   form button {
-    margin-top: 35px;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -1352,18 +1364,18 @@ footer {
   // wr-heading
   .wr-slide h1,
   .wr-slide h2 {
-    font-size: 35px;
+    font-size: 38px;
     letter-spacing: 6.5px;
   }
   .wr-slide .subheading {
-    font-size: 20px;
+    font-size: 22px;
   }
   // section-header
   .section-header {
     width: 95%;
   }
 
-  // video 
+  // video
   .video-description h3 {
     margin: 5px;
     font-size: 18px;
@@ -1426,7 +1438,7 @@ footer {
     top: -65px;
   }
 
-  // featurese 
+  // featurese
   .wr-dark-section {
     padding: 45px 0;
   }
@@ -1439,9 +1451,9 @@ footer {
     width: 43%;
   }
 
-  //prise 
+  // price
   .plan-item {
-    width: 95%;
+    width: 50%;
+    min-width: 250px;
   }
-
 }
