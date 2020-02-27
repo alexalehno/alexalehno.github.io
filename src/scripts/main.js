@@ -34,7 +34,7 @@ $(function() {
   });
 
   function checkScroll(scrollOffset) {
-    if (scrollOffset >= introH) {
+    if (scrollOffset >= introH - 400) {
       header.addClass("fixed");
     } else {
       header.removeClass("fixed");
@@ -49,7 +49,7 @@ $("[data-scroll]").on("click", function(event) {
 
   var $this = $(this),
     blockId = $this.data("scroll"),
-    blockOffset = $(blockId).offset().top - 60;
+    blockOffset = $(blockId).offset().top - 80;
 
   $("#nav a").removeClass("active");
   $this.addClass("active");
