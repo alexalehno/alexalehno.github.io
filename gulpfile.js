@@ -22,7 +22,8 @@ const cssFiles = [
   "./src/css/normolize.css",
   "./src/css/fonts.css",
   "./src/css/setting.css",
-  "./src/scss/main.scss"
+  "./src/scss/main.scss",
+  "./src/scss/blog.scss"
 ];
 
 // // массив js файлов
@@ -50,11 +51,6 @@ function styles() {
     .pipe(cmq({ log: true }))
     .pipe(concat("all.css"))
     .pipe(gulp.dest("./src/css"))
-    // .pipe(
-    //   rename({
-    //     suffix: ".min"
-    //   })
-    // )
     .pipe(cleanCss())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist/css"))
@@ -75,11 +71,6 @@ function scripts() {
     )
     .pipe(concat("main.js"))
     .pipe(gulp.dest("./src/scripts"))
-    // .pipe(
-    //   rename({
-    //     suffix: ".min"
-    //   })
-    // )
     .pipe(uglify())
     .pipe(gulp.dest("./dist/scripts"))
     .pipe(browserSync.stream());
@@ -125,11 +116,6 @@ function html() {
       })
     )
     .pipe(minifyHtml())
-    // .pipe(
-    //   rename({
-    //     suffix: ".min"
-    //   })
-    // )
     .pipe(gulp.dest("./dist"))
     .pipe(browserSync.stream());
 }

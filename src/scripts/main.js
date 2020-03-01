@@ -19,6 +19,7 @@ $(document).ready(function() {
   });
 });
 
+
 /////////////// меню /////////////////
 $(function() {
   var header = $("#header"),
@@ -41,6 +42,7 @@ $(function() {
     }
   }
 });
+
 
 // .................smooth scroll..........
 
@@ -91,7 +93,6 @@ $(".clients-slider").slick({
     }
   ]
 });
-
 
 
 // ............3 - 4 -слайдер team-slider,  skills-slider..............
