@@ -2063,7 +2063,7 @@ main .container {
 	align-items: center;
 }
 
-main .blog-date {
+.blog-date {
 	font-size: 20px;
 	width: 70px;
 	height: 90px;
@@ -2076,14 +2076,7 @@ main .blog-date {
 	grid-row: 2/4;
 }
 
-main h2 {
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 1.8px;
-	color: #505050;
-}
-
-main .post-panel {
+.post-panel {
 	font-size: 15px;
 	display: -webkit-box;
 	display: flex;
@@ -2098,13 +2091,13 @@ main .post-panel {
 	flex-wrap: wrap;
 }
 
-main .post-panel .social-post-panel a {
+.social-panel__ref {
 	display: inline-block;
 	margin: 5px;
 	padding: 5px;
 }
 
-main article {
+.blog-article {
 	font-family: 'Roboto-thin';
 	font-size: 15px;
 	line-height: 1.5;
@@ -2113,19 +2106,26 @@ main article {
 	grid-row: 3/7;
 }
 
-main article img {
+.blog-article__header {
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 1.8px;
+	color: #505050;
+}
+
+.blog-article__img {
 	float: left;
 	max-width: 235px;
 	margin: 15px 15px 15px 0;
 }
 
-main .form-search {
+.form-search {
 	position: relative;
 	grid-column: 4/5;
 	grid-row: 2/3;
 }
 
-main .form-search button {
+.form-search__btn {
 	position: absolute;
 	top: 0;
 	right: 15px;
@@ -2138,7 +2138,7 @@ main .form-search button {
 	background: transparent;
 }
 
-main .form-search button:before {
+.form-search__btn:before {
 	position: absolute;
 	top: 32%;
 	left: 20%;
@@ -2146,38 +2146,13 @@ main .form-search button:before {
 	content: url('../media/icon-blog-page/search-icon.png');
 }
 
-main .social-block {
+.social-block {
 	margin: 20px 0;
 	grid-column: 4/5;
 	grid-row: 3/5;
 }
 
-main .form-subscribe {
-	margin: 20px 0;
-	text-align: left;
-	grid-column: 4/5;
-	grid-row: 5/6;
-}
-
-main .form-subscribe button {
-	width: 150px;
-	height: 40px;
-	margin: 20px 0 0;
-	border-radius: 3px;
-	background-color: #f6744b;
-}
-
-main input {
-	font-size: 14px;
-	width: 90%;
-	height: 40px;
-	margin: 0;
-	padding-left: 10px;
-	border: 1px solid #cacaca;
-	outline: none;
-}
-
-main .social {
+.social-block__network {
 	display: -webkit-inline-box;
 	display: inline-flex;
 	width: 42px;
@@ -2190,16 +2165,41 @@ main .social {
 	align-items: center;
 }
 
-main .facebook-blog {
+.facebook-blog {
 	background-color: #3b5997;
 }
 
-main .twitter-blog {
+.twitter-blog {
 	background-color: #3ec2f3;
 }
 
-main .google-blog {
+.google-blog {
 	background-color: #e44c41;
+}
+
+.form-subscribe {
+	margin: 20px 0;
+	text-align: left;
+	grid-column: 4/5;
+	grid-row: 5/6;
+}
+
+.form-subscribe__btn {
+	width: 150px;
+	height: 40px;
+	margin: 20px 0 0;
+	border-radius: 3px;
+	background-color: #f6744b;
+}
+
+.blog-input {
+	font-size: 14px;
+	width: 90%;
+	height: 40px;
+	margin: 0;
+	padding-left: 10px;
+	border: 1px solid #cacaca;
+	outline: none;
 }
 
 .ft-blog .lg-footer.logo {
@@ -2227,7 +2227,7 @@ main .post-panel {
 	grid-row: 3/4;
 }
 
-main article {
+main .blog-article {
 	grid-column: 2/5;
 	grid-row: 4/7;
 }
@@ -2250,7 +2250,7 @@ main .post-panel {
 	grid-row: 3/5;
 }
 
-main article {
+main .blog-article {
 	grid-column: 1/5;
 	grid-row: 5/7;
 }

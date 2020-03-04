@@ -40,115 +40,93 @@ main {
     grid-template-rows: 50px 65px 65px 50px 150px 1fr 150px;
     align-items: center;
   }
+}
 
-  .blog-date {
-    grid-column: 1/2;
-    grid-row: 2/4;
-    text-align: center;
-    width: 70px;
-    height: 90px;
-    padding-top: 10px;
-    font-size: 20px;
-    border-radius: 3px;
-    background-color: #f6744b;
-    color: #ffffff;
-  }
+.blog-date {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  text-align: center;
+  width: 70px;
+  height: 90px;
+  padding-top: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: #f6744b;
+  color: #ffffff;
+}
 
-  h2 {
+.post-panel {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  font-size: 15px;
+}
+.social-panel__ref {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.blog-article {
+  grid-column: 2/3;
+  grid-row: 3/7;
+  text-align: justify;
+  font-size: 15px;
+  font-family: "Roboto-thin";
+  line-height: 1.5;
+
+  &__header {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1.8px;
     color: #505050;
   }
 
-  .post-panel {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-top: 1px solid #cacaca;
-    border-bottom: 1px solid #cacaca;
-    font-size: 15px;
-    .social-post-panel a {
-      display: inline-block;
-      padding: 5px;
-      margin: 5px;
-    }
+  &__img {
+    max-width: 235px;
+    margin: 15px 15px 15px 0;
+    float: left;
   }
+}
 
-  article {
-    grid-column: 2/3;
-    grid-row: 3/7;
-    text-align: justify;
-    font-size: 15px;
-    font-family: "Roboto-thin";
-    line-height: 1.5;
-    img {
-      max-width: 235px;
-      margin: 15px 15px 15px 0;
-      float: left;
-    }
-  }
+.form-search {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  position: relative;
 
-  .form-search {
-    grid-column: 4/5;
-    grid-row: 2/3;
-    position: relative;
-    button {
-      position: absolute;
-      top: 0;
-      right: 15px;
-      height: 42px;
-      width: 42px;
-      margin: 0;
-      border: none;
-      outline: none;
-      background: transparent;
-      cursor: pointer;
-      &:before {
-        content: url("../media/icon-blog-page/search-icon.png");
-        display: block;
-        position: absolute;
-        top: 32%;
-        left: 20%;
-      }
-    }
-  }
-
-  .social-block {
-    grid-column: 4/5;
-    grid-row: 3/5;
-    margin: 20px 0;
-  }
-
-  .form-subscribe {
-    grid-column: 4/5;
-    grid-row: 5/6;
-    text-align: left;
-    margin: 20px 0;
-
-    button {
-      width: 150px;
-      height: 40px;
-      margin: 20px 0 0;
-      border-radius: 3px;
-      background-color: #f6744b;
-    }
-  }
-
-  input {
-    width: 90%;
-    height: 40px;
-    padding-left: 10px;
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 42px;
+    width: 42px;
     margin: 0;
-    font-size: 14px;
-    border: 1px solid #cacaca;
+    border: none;
     outline: none;
-  }
+    background: transparent;
+    cursor: pointer;
 
-  .social {
+    &:before {
+      content: url("../media/icon-blog-page/search-icon.png");
+      display: block;
+      position: absolute;
+      top: 32%;
+      left: 20%;
+    }
+  }
+}
+
+.social-block {
+  grid-column: 4/5;
+  grid-row: 3/5;
+  margin: 20px 0;
+
+  &__network {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -157,16 +135,41 @@ main {
     margin-right: 15px;
     border-radius: 50%;
   }
+}
 
-  .facebook-blog {
-    background-color: #3b5997;
+.facebook-blog {
+  background-color: #3b5997;
+}
+.twitter-blog {
+  background-color: #3ec2f3;
+}
+.google-blog {
+  background-color: #e44c41;
+}
+
+.form-subscribe {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  text-align: left;
+  margin: 20px 0;
+
+  &__btn {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0;
+    border-radius: 3px;
+    background-color: #f6744b;
   }
-  .twitter-blog {
-    background-color: #3ec2f3;
-  }
-  .google-blog {
-    background-color: #e44c41;
-  }
+}
+
+.blog-input {
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 14px;
+  border: 1px solid #cacaca;
+  outline: none;
 }
 
 // FOOTER
@@ -194,7 +197,7 @@ main {
       grid-row: 3/4;
     }
 
-    article {
+    .blog-article {
       grid-column: 2/5;
       grid-row: 4/7;
     }
@@ -217,7 +220,7 @@ main {
       grid-row: 3/5;
     }
 
-    article {
+    .blog-article {
       grid-column: 1/5;
       grid-row: 5/7;
     }

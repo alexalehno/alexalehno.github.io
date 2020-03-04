@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./slick/slick-theme.css">
   <link rel="shortcut icon" type="ico/png" href="./media/icon/idea.png" />
-  <link rel="stylesheet" href="../src/css/all.css">
+  <link rel="stylesheet" href='./css/all.css'>
   <title>Blog</title>
 </head>
 
@@ -56,18 +56,18 @@
       </div>
 
       <div class="post-panel">
-        <span>Tags: Design, Creative, Wordpress theme</span>
-        <a href="#">Read More</a>
-        <a href="#">126 comments</a>
-        <div class="social-post-panel">
-          <a href="#"><img src="../src/media/icon-blog-page/facebook-post-panel.png" alt="facebook-icon"></a>
-          <a href="#"><img src="../src/media/icon-blog-page/twitter-post-panel.png" alt="twitter-icon"></a>
+        <span class="post-panel-tags">Tags: Design, Creative, Wordpress theme</span>
+        <a class="post-panel-ref" href="#">Read More</a>
+        <a class="post-panel-ref" href="#">126 comments</a>
+        <div class="social-panel">
+          <a class="social-panel__ref" href="#"><img src="./media/icon-blog-page/facebook-post-panel.png" alt="facebook-icon"></a>
+          <a class="social-panel__ref" href="#"><img src="./media/icon-blog-page/twitter-post-panel.png" alt="twitter-icon"></a>
         </div>
       </div>
 
-      <article>
-        <h2>Creative Manipulations</h2>
-        <img src="../src/media/img/new-york-city.jpg" alt="">
+      <article class="blog-article">
+        <h2 class="blog-article__header">Creative Manipulations</h2>
+        <img class="blog-article__img" src="./media/img/new-york-city.jpg" alt="new-york-city">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloribus accusamus nostrum vero
           consectetur. Earum, unde. Reprehenderit nemo ipsa dignissimos vero beatae eveniet nihil nobis, magni facilis
           placeat praesentium inventore quas incidunt quos rerum officiis pariatur sunt omnis. Facere, earum. Eveniet
@@ -81,26 +81,24 @@
 
 
       <form class="form-search" action="#">
-        <input type="text" placeholder="SEARCH">
-        <button type="submit"></button>
+        <input class="form-search__input blog-input" type="text" placeholder="SEARCH">
+        <button class="form-search__btn" type="submit"></button>
       </form>
 
       <div class="social-block">
-        <p>FOLLOW US</p>
-        <a class="social facebook-blog" href="#"><img src="../src/media/icon-blog-page/facebook-blog.png"
+        <p class="social-block__title">FOLLOW US</p>
+        <a class="social-block__network facebook-blog" href="#"><img src="./media/icon-blog-page/facebook-blog.png"
             alt="facebook-icon"></a>
-        <a class="social twitter-blog" href="#"><img src="../src/media/icon-blog-page/twitter-blog.png"
+        <a class="social-block__network twitter-blog" href="#"><img src="./media/icon-blog-page/twitter-blog.png"
             alt="twitter-icon"></a>
-        <a class="social google-blog" href="#"><img src="../src/media/icon-blog-page/google-blog.png"
+        <a class="social-block__network google-blog" href="#"><img src="./media/icon-blog-page/google-blog.png"
             alt="google-icon"></a>
       </div>
 
       <form class="form-subscribe" action="#">
-        <input type="email" placeholder="ENTER YOUR E-MAIL">
-        <button type="submit">subscribe</button>
+        <input class="form-subscribe__input blog-input" type="email" placeholder="ENTER YOUR E-MAIL">
+        <button class="form-subscribe__btn" type="submit">subscribe</button>
       </form>
-
-
 
     </div>
 
