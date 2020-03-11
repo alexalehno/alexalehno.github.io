@@ -884,23 +884,21 @@ nav.active {
 	margin-left: 20px;
 }
 
-.wr-portfolio ul a {
+.wr-portfolio ul button {
 	font-family: 'Roboto';
 	font-size: 14px;
 	font-weight: 300;
 	padding: 5px;
-	-webkit-transition: .5s;
-	transition: .5s;
 	letter-spacing: 1.4px;
 	text-transform: uppercase;
 	color: #3d3d3d;
 	border-bottom: 1px solid #fff;
+	outline: none;
+	background-color: transparent;
 }
 
-.wr-portfolio ul a:hover {
-	font-weight: 700;
-	-webkit-transition: .5s;
-	transition: .5s;
+.wr-portfolio ul button.active {
+	font-weight: 900;
 	border-bottom: 1px solid #e84c3d;
 }
 
@@ -909,14 +907,16 @@ nav.active {
 	display: flex;
 	margin-top: 30px;
 	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	justify-content: center;
 }
 
 .projects img {
 	width: 20%;
 }
 
-.projects.active {
-	background-color: #e84c3d;
+.projects .hidden {
+	display: none;
 }
 
 .wr-clients {
@@ -1801,14 +1801,17 @@ header .logo span {
 	margin: 5px;
 }
 
-.wr-portfolio ul li a {
+.wr-portfolio ul button {
 	font-size: 12px;
-	display: inline-block;
-	width: 110px;
+	width: 120px;
 	padding: 8px;
 	color: #fff;
 	border-radius: 20px;
 	background-color: #f6744b;
+}
+
+.wr-portfolio ul button.active {
+	color: black;
 }
 
 .projects {
@@ -1956,10 +1959,6 @@ form button {
 
 .projects img {
 	width: 50%;
-}
-
-.projects img:nth-child(n + 7) {
-	display: none;
 }
 
 .wr-clients .draggable {
