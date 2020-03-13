@@ -1,9 +1,9 @@
-.no-fricking-scroll-wrapper {
+.no-scroll-wrapper {
   overflow: hidden;
 }
 
 // variables
-$transition: 0.5s;
+$transition: 0.4s;
 
 @mixin flex-align-items-center {
   display: flex;
@@ -263,7 +263,7 @@ nav {
 
   .slick-prev:hover::before,
   .slick-next:hover::before {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 
   .slick-prev::before {
@@ -505,7 +505,7 @@ nav {
   }
   .slick-prev:hover::before,
   .slick-next:hover::before {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
 
@@ -742,22 +742,22 @@ nav {
     }
 
     &:hover {
-      background-color: #000000;
+      background-color: hsl(0, 0%, 0%);
     }
   }
 
   &.blog-one {
-    background-image: url("../media/img/landscape.jpg");
+    background-image: url("../media/img/earphones.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   &.blog-two {
-    background-image: url("../media/img/ferris-wheel.jpg");
+    background-image: url("../media/img/coffee.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   &.blog-three {
-    background-image: url("../media/img/land.jpg");
+    background-image: url("../media/img/crow.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }

@@ -13,8 +13,8 @@ $(document).ready(function() {
   // 1 - слайдер heading
   $(".heading-slider").slick({
     dots: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1300,
     arrows: true
   });
 });
@@ -99,8 +99,8 @@ $(".clients-slider").slick({
 
 $(".team-slider").slick({
   dots: true,
-  autoplay: false,
-  autoplaySpeed: 800,
+  autoplay: true,
+  autoplaySpeed: 1000,
   arrows: false,
   asNavFor: ".skills-slider"
 });

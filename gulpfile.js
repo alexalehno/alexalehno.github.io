@@ -29,7 +29,8 @@ const cssFiles = [
 // // массив js файлов
 const jsFiles = [
  "./src/js/js.js",
- "./src/js/video-play.js"
+ "./src/js/video-play.js",
+ "./src/js/tabs.js"
 ];
 
 // СТИЛИ/
