@@ -1182,15 +1182,18 @@ nav.active {
 	font-weight: 300;
 }
 
-.features {
-	display: -webkit-box;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+.features .slick-dots li button:before {
+	font-size: 13px;
+	left: -15px;
 }
 
 .features-item {
-	width: 20%;
+	min-width: 150px;
+	outline: none;
+}
+
+.features-item img {
+	display: inline-block;
 }
 
 .feature-name {
@@ -1850,16 +1853,8 @@ header .logo span {
 	margin-top: 15px;
 }
 
-.features {
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-pack: center;
-	justify-content: center;
-}
-
 .features-item {
-	width: 30%;
-	margin: 15px;
+	margin: 15px 0;
 }
 
 .wr-blogs {
@@ -2003,10 +1998,6 @@ form button {
 
 .wr-dark-section h2 {
 	font-size: 27px;
-}
-
-.features-item {
-	width: 43%;
 }
 
 .plan-item {

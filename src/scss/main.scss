@@ -394,7 +394,7 @@ nav {
   padding: 0;
   margin-top: 55px;
   list-style: none;
-  
+
   li {
     margin-left: 20px;
   }
@@ -422,9 +422,9 @@ nav {
   @include flex-flex-wrap;
   justify-content: center;
   margin-top: 30px;
-  
+
   img {
-    width: 20%; 
+    width: 20%;
   }
 
   .hidden {
@@ -659,13 +659,18 @@ nav {
 
 //////////  features /////////////////////
 
-.features {
-  @include flex-flex-wrap;
-  justify-content: space-around;
+.features .slick-dots li button:before {
+  left: -15px;
+  font-size: 13px;
 }
 .features-item {
-  width: 20%;
+  min-width: 150px;
+  outline: none;
+  img {
+    display: inline-block;
+  }
 }
+
 .feature-name {
   display: block;
   margin-top: 20px;
@@ -1236,7 +1241,7 @@ footer {
   .wr-portfolio ul {
     margin-top: 10px;
     li {
-      margin: 5px; 
+      margin: 5px;
     }
     button {
       width: 120px;
@@ -1288,13 +1293,8 @@ footer {
   }
 
   // features
-  .features {
-    display: flex;
-    justify-content: center;
-  }
   .features-item {
-    width: 30%;
-    margin: 15px;
+    margin: 15px 0;
   }
 
   // blogs
@@ -1448,10 +1448,6 @@ footer {
 
   .wr-dark-section h2 {
     font-size: 27px;
-  }
-
-  .features-item {
-    width: 43%;
   }
 
   // price

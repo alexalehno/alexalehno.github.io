@@ -112,6 +112,34 @@ $(".skills-slider").slick({
 });
 
 
+// слайдер features
+
+$(".features").slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 770,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true      
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 // .......................аккардеон............................................
 
 $("[data-collapse]").on("click", function(event) {
