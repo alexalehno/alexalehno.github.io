@@ -1185,6 +1185,7 @@ nav.active {
 .features .slick-dots li button:before {
 	font-size: 13px;
 	left: -15px;
+	color: #f6f6f6;
 }
 
 .features-item {
