@@ -1,34 +1,33 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // бургер меню. добавляем active
-  
-  $(".burger-menu").click(function(event) {
+
+  $(".burger-menu").click(function (event) {
     $(".burger-menu, nav").toggleClass("active");
   });
 
-  // удаляем active 
-  $("section, footer, nav").click(function(event) {
+  // удаляем active
+  $("section, footer, nav").click(function (event) {
     $(".burger-menu, nav").removeClass("active");
   });
 
   // 1 - слайдер heading
   $(".heading-slider").slick({
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1300,
-    arrows: true
+    arrows: true,
   });
 });
 
-
 /////////////// меню /////////////////
-$(function() {
+$(function () {
   var header = $("#header"),
     introH = $("#about").innerHeight(),
     scrollOffset = $(window).scrollTop();
 
   checkScroll(scrollOffset);
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     scrollOffset = $(this).scrollTop();
 
     checkScroll(scrollOffset);
@@ -43,10 +42,9 @@ $(function() {
   }
 });
 
-
 // .................smooth scroll..........
 
-$("[data-scroll]").on("click", function(event) {
+$("[data-scroll]").on("click", function (event) {
   event.preventDefault();
 
   var $this = $(this),
@@ -58,12 +56,11 @@ $("[data-scroll]").on("click", function(event) {
 
   $("html, body").animate(
     {
-      scrollTop: blockOffset
+      scrollTop: blockOffset,
     },
     1000
   );
 });
-
 
 // .............2 - слайдер clients-slider...........
 
@@ -81,36 +78,34 @@ $(".clients-slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true      
-      }
+        infinite: true,
+      },
     },
     {
       breakpoint: 770,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
-
 
 // ............3 - 4 -слайдер team-slider,  skills-slider..............
 
 $(".team-slider").slick({
   dots: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 1000,
   arrows: false,
-  asNavFor: ".skills-slider"
+  asNavFor: ".skills-slider",
 });
 
 $(".skills-slider").slick({
   dots: false,
   arrows: false,
-  asNavFor: ".team-slider"
+  asNavFor: ".team-slider",
 });
-
 
 // слайдер features
 
@@ -126,23 +121,23 @@ $(".features").slick({
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true      
-      }
+        infinite: true,
+      },
     },
     {
       breakpoint: 575,
       settings: {
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 // .......................аккардеон............................................
 
-$("[data-collapse]").on("click", function(event) {
+$("[data-collapse]").on("click", function (event) {
   event.preventDefault();
 
   var $this = $(this),

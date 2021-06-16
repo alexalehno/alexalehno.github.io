@@ -89,6 +89,7 @@ function images() {
     .pipe(gulp.dest("dist/media/"));
 }
 
+// ...........................................................................
 // перебрасываем папку fonts в dist
 function fonts() {
   return gulp.src("./src/fonts/**/*").pipe(gulp.dest("dist/fonts/"));
@@ -103,6 +104,7 @@ function jquery() {
 function slick() {
   return gulp.src("./src/slick/**/*").pipe(gulp.dest("dist/slick/"));
 }
+// ............................................................................
 
 // минификация HTML
 function html() {
